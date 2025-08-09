@@ -1,0 +1,17 @@
+
+
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  
+  <listeners>
+  	<listener class-name="utilities.ExtentReportManager"></listener>
+  </listeners>
+  
+  <parameter name="os" value="Windows" />
+  <parameter name="browser" value="chrome" />
+  
+    <classes>
+	    <class name="testCases.TC001_LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

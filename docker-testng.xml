@@ -1,0 +1,29 @@
+
+
+<suite name="Suite">
+  <test thread-count="5" name="LinuxChromeTest">
+  <listeners>
+  	<listener class-name="utilities.ExtentReportManager"></listener>
+  </listeners>
+  
+  <parameter name="os" value="Linux" />
+  <parameter name="browser" value="chrome" />
+  
+    <classes>
+	    <class name="testCases.TC001_LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test thread-count="5" name="LinuxFirefoxTest">
+  <listeners>
+  	<listener class-name="utilities.ExtentReportManager"></listener>
+  </listeners>
+  
+  <parameter name="os" value="Linux" />
+  <parameter name="browser" value="firefox" />
+  
+    <classes>
+	    <class name="testCases.TC001_LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
